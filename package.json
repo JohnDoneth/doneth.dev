@@ -1,0 +1,24 @@
+{
+  "name": "donethdotnet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "elm-app build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnDoneth/doneth.net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnDoneth/doneth.net/issues"
+  },
+  "homepage": "https://github.com/JohnDoneth/doneth.net#readme",
+  "dependencies": {
+    "create-elm-app": "^4.1.2"
+  }
+}
