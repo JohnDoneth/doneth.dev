@@ -2,6 +2,8 @@ module Landing exposing (Model, Msg, init, update, view)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Markdown
+import Static exposing (..)
 
 
 type Model
@@ -95,10 +97,49 @@ madeWithElm =
         ]
 
 
+aboutMe : Html Msg
+aboutMe =
+    div
+        [ class "m-4"
+        , class "px-4"
+        , class "max-w-xl"
+        , class "mx-auto"
+        , class "leading-normal"
+        ]
+    <|
+        Markdown.toHtml Nothing """
+# Hello
+
+Hello and welcome, to my portfolio website!
+
+My name is John Doneth and I've been programming since I was a little kid.
+
+To me programming is more than ***just*** a job, it's my *passion*. 
+
+I love to take real world problems and solve them through well crafted code. 
+
+> I can turn your ideas into reality.
+    
+Feel free to checkout the skills and projects I've worked on, below.
+"""
+
+
+renderList : List String -> Html msg
+renderList lst =
+    ul []
+        (List.map (\l -> li [] [ text l ]) lst)
+
+
+skills : Html Msg
+skills =
+    renderList languages
+
+
 view : Model -> Html Msg
 view model =
     div
         []
         [ hero model
+        , aboutMe
         , madeWithElm
         ]

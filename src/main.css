@@ -7,3 +7,9 @@
 [data-elm-hot="true"] {
     height: inherit;
 }
+
+h1 {
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
