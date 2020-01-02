@@ -1,0 +1,2 @@
+#! /bin/bash
+elm-live src/Main.elm --port 8080 -u  -- --output=elm-output.js
