@@ -10,7 +10,6 @@ class TailwindExtractor {
 module.exports = {
     plugins: [
         require("tailwindcss"),
-        require("autoprefixer"),
         require("postcss-import"),
         require("postcss-preset-env"),
         require("cssnano"),
@@ -24,5 +23,6 @@ module.exports = {
             content: ["./src/**/*.elm", "index.js"],
             whitelist: ["html", "body"]
         }),
+        require("autoprefixer"),
     ]
 }
