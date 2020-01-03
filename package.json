@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "refresh": "npx tailwind build src/input.css -o src/main.css",
+    "refresh": "npx tailwind build src/main.css -o public/css/generated.css",
     "build": "elm-app build"
   },
   "repository": {

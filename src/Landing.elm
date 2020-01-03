@@ -110,9 +110,9 @@ aboutMe =
         Markdown.toHtml Nothing """
 # Hello and welcome, to my website!
 
-My name is John Doneth and I've been programming since I was a little kid. To me programming is more than ***just*** a job, it's my *passion*. 
+My name is John Doneth and I've been programming since I was a little kid. To me programming is more than ***just*** my job, it's my *passion*. 
 
-I love to take real world problems and solve them using well crafted code. I can turn your ideas into reality.
+I love to take real world problems and solve them using well crafted code. With the skills I've learned I can bring project ideas into reality.
     
 Feel free to checkout the skills I've learned as well as the projects I've worked on, below.
 """
