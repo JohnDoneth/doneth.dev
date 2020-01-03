@@ -83,15 +83,14 @@ madeWithElm =
         , class "flex"
         , class "m-4"
         ]
-        [ text "Website written in the"
+        [ text "This website was written using"
         , a [ href "https://elm-lang.org/", class "mx-1", class "underline" ] [ text "Elm" ]
-        , text "programming language with"
         , img
             [ class "text-red-700"
-            , class "ml-2"
+            , class "ml-1"
             , src "/img/heart.svg"
-            , width 24
-            , height 24
+            , width 16
+            , height 16
             ]
             []
         ]
@@ -110,11 +109,11 @@ aboutMe =
         Markdown.toHtml Nothing """
 # Hello!
 
-My name is John Doneth and I've been programming since I was a little kid. To me programming is more than ***just*** my job, it's my *passion*. 
+My name is John Doneth and I've been programming ever since I received my first computer as a child. To me, programming is more than ***just*** my job, it's my *passion*. 
 
-I love to take real world problems and solve them using well crafted code. With the skills I've learned I can bring project ideas into reality.
+I find it a joy to take on real world problems by creating solutions though code. With the skills I've learned I can bring project ideas into reality.
     
-Feel free to checkout the skills I've learned as well as the projects I've worked on, below.
+Feel free to checkout the projects I've worked on, as well as the skills I've learned along the way, below.
 """
 
 
@@ -127,6 +126,16 @@ renderList lst =
 skills : Html Msg
 skills =
     renderList languages
+
+
+projects : Html Msg
+projects =
+    div [] []
+
+
+contactMe : Html Msg
+contactMe =
+    div [] []
 
 
 view : Model -> Html Msg
