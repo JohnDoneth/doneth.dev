@@ -108,7 +108,7 @@ aboutMe =
         ]
     <|
         Markdown.toHtml Nothing """
-# Hello and welcome, to my website!
+# Hello!
 
 My name is John Doneth and I've been programming since I was a little kid. To me programming is more than ***just*** my job, it's my *passion*. 
 
