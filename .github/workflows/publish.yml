@@ -28,6 +28,8 @@ jobs:
       - run: mix do local.rebar --force, local.hex --force, deps.get
 
       - run: mix tableau.build
+      
+      - run: mix tailwind default
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
