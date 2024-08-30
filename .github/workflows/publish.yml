@@ -6,14 +6,17 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-      id-token: write
 
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    
     name: Publish to GitHub Pages
+    
     env:
       MIX_ENV: prod
+    
     steps:
       - uses: actions/checkout@v3
 
@@ -26,8 +29,8 @@ jobs:
 
       - run: mix tableau.build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v4
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

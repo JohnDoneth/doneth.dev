@@ -17,8 +17,6 @@ defmodule Website.HomePage do
               <a href={post.permalink}><%= post.title %></a>
             </li>
           <% end %>
-
-        
         </ul>
       </div>
     </div>
