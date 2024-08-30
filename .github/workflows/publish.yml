@@ -9,6 +9,8 @@ jobs:
     permissions:
       contents: read
       deployments: write
+      id-token: write
+
     name: Publish to GitHub Pages
     env:
       MIX_ENV: prod
